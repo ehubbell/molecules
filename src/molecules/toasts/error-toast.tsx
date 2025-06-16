@@ -26,4 +26,4 @@ const ErrorToast = ({ toast, onRemove }) => {
 	);
 };
 
-export default ErrorToast;
+export { ErrorToast };

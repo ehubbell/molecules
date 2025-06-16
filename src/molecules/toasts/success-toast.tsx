@@ -26,4 +26,4 @@ const SuccessToast = ({ toast, onRemove }) => {
 	);
 };
 
-export default SuccessToast;
+export { SuccessToast };

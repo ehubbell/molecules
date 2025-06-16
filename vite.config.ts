@@ -24,7 +24,10 @@ export default defineConfig(({ mode }) => {
 		build: {
 			sourcemap: true,
 			lib: {
-				entry: path.resolve(__dirname, 'src/index.tsx'),
+				entry: [
+					path.resolve(__dirname, 'src/index.tsx'),
+					path.resolve(__dirname, 'src/molecules/toasts/toasts.tsx'),
+				],
 				name: 'Hooks',
 				formats: ['es', 'cjs'],
 				fileName: (format, entryName) => `${entryName}.${format}.js`,

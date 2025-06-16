@@ -26,4 +26,4 @@ const InfoToast = ({ toast, onRemove }) => {
 	);
 };
 
-export default InfoToast;
+export { InfoToast };
