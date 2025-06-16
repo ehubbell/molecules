@@ -1,21 +1,20 @@
 import { useEffect, useState } from 'react';
 
 import { Toast, ToastBody, ToastHeader, ToastIcon, ToastText, ToastTitle } from '@playbooks/ui/toasts';
-import { sleep } from 'utils';
 
 const SuccessToast = ({ toast, onRemove }) => {
 	const [open, setOpen] = useState(true);
 
 	// Hooks
 	useEffect(() => {
-		sleep(3000)?.then(() => setOpen(false));
+		setTimeout(() => setOpen(false), 3000);
 	}, []);
 
 	// Render
 	return (
 		<Toast open={open} setOpen={setOpen} onRemove={() => onRemove(toast)}>
 			<ToastHeader onRemove={() => onRemove(toast)}>
-				<ToastIcon icon='circle-check' color='text-primary dark:green-500' />
+				<ToastIcon icon='circle-check' color='text-primary dark:green' />
 				<ToastTitle>{toast.title}</ToastTitle>
 			</ToastHeader>
 			{toast.message && (
