@@ -1,6 +1,6 @@
 {
   "name": "@ehubbell/molecules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of molecules for React projects.",
   "author": "Eric Hubbell<eric@erichubbell.com>",
   "license": "ISC",
@@ -73,9 +73,9 @@
     "accounting": "^0.4.1"
   },
   ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
   },
   "./toasts": {
     "import": "./dist/toasts.mjs",
