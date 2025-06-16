@@ -71,5 +71,15 @@
     "@ehubbell/utils": "^0.0.24",
     "@playbooks/ui": "^0.8.15",
     "accounting": "^0.4.1"
+  },
+  ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+  },
+  "./toasts": {
+    "import": "./dist/toasts.mjs",
+    "require": "./dist/toasts.cjs",
+    "types": "./dist/toasts.d.ts"
   }
 }
