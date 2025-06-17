@@ -7,7 +7,7 @@ import { Item } from 'molecules/items';
 const ItemSkeleton = ({ count }) => (
 	<Fragment>
 		{listBuilder(count).map((v, i) => (
-			<Item type='text' key={i} keyName={<Skeleton width='20%' />} value={<Skeleton width='20%' />} width='w-full' />
+			<Item type='text' key={i} keyName={<Skeleton width='w-1/4' />} value={<Skeleton width='w-1/4' />} width='w-full' />
 		))}
 	</Fragment>
 );

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { AccentBtn } from '@playbooks/ui/buttons';
 import { FormInput } from '@playbooks/ui/forms';
 import { InputAppend, InputGroup, InputPrepend } from '@playbooks/ui/input-groups';
-import { sleep } from 'utils';
+import { sleep } from '@ehubbell/utils';
 
 type iSearchForm = {
 	id?: string;

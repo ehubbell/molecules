@@ -11,7 +11,7 @@ const TableSkeleton = ({ count, grid, tailwind }) => {
 				<Col key={i}>
 					<Grid className='flex items-center px-4 py-2 w-full'>
 						<Col span='1'>
-							<Skeleton circle={true} height={32} width={32} />
+							<Skeleton borderRadius='rounded-md' leading='leading-[inherit]' height='h-8' width='w-8' />
 						</Col>
 						<Col span='2'>
 							<H6>

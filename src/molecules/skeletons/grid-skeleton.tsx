@@ -11,13 +11,13 @@ const GridSkeleton = ({ tailwind }) => {
 			</CardHeader>
 			<CardBody space='space-y-2' spacing='p-4'>
 				<CardPretitle display=''>
-					<Skeleton width='25%' />
+					<Skeleton width='w-1/4' />
 				</CardPretitle>
 				<CardTitle display=''>
-					<Skeleton width='50%' />
+					<Skeleton width='w-1/2' />
 				</CardTitle>
 				<CardSubtitle>
-					<Skeleton width='75%' />
+					<Skeleton width='w-3/4' />
 				</CardSubtitle>
 			</CardBody>
 			<CardFooter border='' display='flex-between' space='space-x-4' spacing='p-4'>

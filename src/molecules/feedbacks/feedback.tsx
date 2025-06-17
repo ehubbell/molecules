@@ -2,7 +2,7 @@ import { ListFeedback, PageFeedback, PreviewFeedback, SearchFeedback, TableFeedb
 
 interface Feedback {
 	type: string;
-	icon: any;
+	icon?: any;
 	title?: string;
 	text?: string;
 	tailwind?: any;
