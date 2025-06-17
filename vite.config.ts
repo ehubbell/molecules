@@ -1,5 +1,6 @@
 import { exec } from 'node:child_process';
 import path from 'path';
+import react from '@vitejs/plugin-react';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { defineConfig } from 'vite';
 
@@ -17,7 +18,7 @@ export function pushBuild() {
 }
 
 export default defineConfig(({ mode }) => {
-	const plugins = mode !== 'production' ? [pushBuild()] : [];
+	const plugins = mode !== 'production' ? [pushBuild(), react()] : [react()];
 
 	return {
 		base: './',
