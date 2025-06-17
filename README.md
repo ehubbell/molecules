@@ -1,6 +1,10 @@
 # Overview
  A collection of molecules for React projects.
 
+## Prerequisites
+- @ehubbell/utils
+- @playbooks/ui
+
 ## Installation
 ```
 npm install @ehubbell/molecules
