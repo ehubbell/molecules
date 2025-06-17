@@ -5,7 +5,7 @@ const config = {
 	entries: fileNames.map(fileName => {
 		if (fileName !== 'index') {
 			return {
-				filePath: `./src/molecules/${fileName}/${fileName}.tsx`,
+				filePath: `./src/molecules/${fileName}/index.tsx`,
 				outFile: `./dist/${fileName}.d.ts`,
 				noCheck: false,
 			};

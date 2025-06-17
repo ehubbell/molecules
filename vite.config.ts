@@ -22,11 +22,16 @@ export default defineConfig(({ mode }) => {
 	return {
 		base: './',
 		build: {
-			sourcemap: true,
+			sourcemap: mode !== 'production',
 			lib: {
 				entry: [
 					path.resolve(__dirname, 'src/index.tsx'),
-					path.resolve(__dirname, 'src/molecules/toasts/toasts.tsx'),
+					path.resolve(__dirname, 'src/molecules/feedbacks'),
+					path.resolve(__dirname, 'src/molecules/items'),
+					path.resolve(__dirname, 'src/molecules/paginations'),
+					path.resolve(__dirname, 'src/molecules/skeletons'),
+					path.resolve(__dirname, 'src/molecules/toasts'),
+					path.resolve(__dirname, 'src/molecules/toggles'),
 				],
 				name: 'Hooks',
 				formats: ['es', 'cjs'],
