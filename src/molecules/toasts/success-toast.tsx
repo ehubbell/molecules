@@ -14,7 +14,7 @@ const SuccessToast = ({ toast, onRemove }) => {
 	return (
 		<Toast open={open} setOpen={setOpen} onRemove={() => onRemove(toast)}>
 			<ToastHeader onRemove={() => onRemove(toast)}>
-				<ToastIcon icon='circle-check' color='text-primary dark:green' />
+				<ToastIcon icon='circle-check' color='text-green-500 dark:text-green-500' />
 				<ToastTitle>{toast.title}</ToastTitle>
 			</ToastHeader>
 			{toast.message && (

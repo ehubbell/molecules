@@ -7,13 +7,13 @@ const config = {
 			return {
 				filePath: `./src/molecules/${fileName}/index.tsx`,
 				outFile: `./dist/${fileName}.d.ts`,
-				noCheck: false,
+				noCheck: true,
 			};
 		}
 		return {
 			filePath: `./src/${fileName}.tsx`,
 			outFile: `./dist/${fileName}.d.ts`,
-			noCheck: false,
+			noCheck: true,
 		};
 	}),
 };

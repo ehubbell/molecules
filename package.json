@@ -37,8 +37,8 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "@ehubbell/utils": "^0",
-    "@playbooks/ui": "^0",
+    "@ehubbell/utils": "latest",
+    "@playbooks/ui": "latest",
     "react": "^18 || ^19",
     "react-dom": "^18 || ^19"
   },
