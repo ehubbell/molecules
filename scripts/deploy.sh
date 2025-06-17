@@ -38,7 +38,9 @@ wait $push_id
 if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n npm version \n"
-npm version $2
+npm version $2 & version_id=$!
+wait $version_id
+if [ $? -eq 1 ]; then exit; fi
 
 echo -e "\n npm build \n"
 npm run build & build_id=$!
